@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Saúde Alimentar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: white;
+            color: #333;
+        }
+        header {
+            background-color: rgb(134, 118, 223);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            font-style: italic;
+        }
+        nav {
+            background-color: #7550b8;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+        nav a:hover {
+            color: #5b32a8;
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #7550b8;
+            font-size: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        footer {
+            background-color: rgb(134, 118, 223);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-style: italic;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .calc {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #7550b8;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5b32a8;
+        }
+        #resultado {
+            font-size: 24px;
+            font-weight: bold;
+            color: #5b32a8;
+            margin-top: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Saúde Alimentar</h1>
+        <p>Diabetes e Nutrição</p>
+    </header>
+
+    <nav>
+        <a href="projetoIC.html">Início</a>
+        <a href="info.html">Informações</a>
+        <a href="calc.html">Calculadora</a>
+        <a href="receitas.html">Receitas</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <main>
+        <h2>Calculadora de Carboidratos</h2>
+        <div class="calc">
+            <p>Selecione um alimento e a quantidade (em porções). O sistema calculará o total aproximado de carboidratos.</p>
+
+            <label for="alimento"><strong>Alimento:</strong></label>
+            <select id="alimento">
+    <option value="15">Arroz – 15g CHO por porção (½ xícara cheia)</option>
+    <option value="12">Feijão – 12g CHO por porção (½ concha média)</option>
+    <option value="25">Pão francês – 25g CHO por porção (½ pão francês pequeno)</option>
+    <option value="10">Maçã – 10g CHO por porção (½ maçã pequena)</option>
+    <option value="8">Brócolis – 8g CHO por porção (1 xícara de brócolis cozido)</option>
+</select>
+<br>
+
+            <label for="porcoes"><strong>Quantidade de porções:</strong></label>
+            <input type="number" id="porcoes" placeholder="Ex: 2">
+
+            <button onclick="calcular()">Calcular Carboidratos</button>
+
+            <p id="resultado"></p>
+
+            <script>
+                function calcular() {
+                    let carbo = parseFloat(document.getElementById("alimento").value);
+                    let porcoes = parseFloat(document.getElementById("porcoes").value);
+
+                    if (isNaN(porcoes) || porcoes <= 0) {
+                        document.getElementById("resultado").innerHTML = "Por favor, insira uma quantidade válida de porções.";
+                        return;
+                    }
+
+                    let total = carbo * porcoes;
+                    document.getElementById("resultado").innerHTML = "RESULTADO: " + total + "g de carboidratos.";
+                }
+            </script>
+        </div>
+    </main>
+
+    <footer>
+        <p>Projeto Científico - CEMEP 2025 | Orientação: Prof. Rafael Bonato e Prof. Pedro Ribeiro de Oliveira</p>
+        <p>Desenvolvido por Letícia Vedovello e Rafaela Munsignatti</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas - Saúde Alimentar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: white;
+            color: #333;
+        }
+        header {
+            background-color: rgb(134, 118, 223);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            font-style: italic;
+        }
+        nav {
+            background-color: #7550b8;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+        nav a:hover {
+            color: #5b32a8;
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #7550b8;
+            font-size: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h3{
+            color: #5a2bb1;
+            font-size: 25px;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .receita-tabela {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+        .receita-tabela td {
+            vertical-align: top;
+            padding: 15px;
+             vertical-align: middle !important;
+        }
+        .receita-tabela tr {
+            vertical-align: middle;
+        }
+        .receita-tabela td img {
+            display: block;
+            margin: 0 auto;
+            border: 4px solid #7550b8;
+            border-radius: 12px;
+        }
+        .receita-img {
+            width: 450px !important;
+            height: 450px !important;
+            object-fit: cover !important;
+            border-radius: 10px !important;
+        }
+        footer {
+            background-color: rgb(134, 118, 223);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-style: italic;
+            width: 100%;
+        }
+        .receita-box { 
+            background-color: #ffffff; 
+            border-radius: 10px; 
+            padding: 1rem; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+            margin-bottom: 2rem; 
+        }
+        .receita-img { 
+            width: 250px; 
+            height: 250px; 
+            object-fit: cover; 
+            border-radius: 10px;
+         }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>Saúde Alimentar</h1>
+        <p>Diabetes e Nutrição</p>
+    </header>
+
+    <nav>
+        <a href="projetoIC.html">Início</a>
+        <a href="info.html">Informações</a>
+        <a href="calc.html">Calculadora</a>
+        <a href="receitas.html">Receitas</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <main>
+        <h2>Receitas Acessíveis e Saudáveis</h2>
+
+        <div class="receita-box">
+<table class="receita-tabela">
+            <tr>
+                <td>
+                    <h3>Muffin de Banana sem Açúcar</h3>
+                    <p><strong>Tempo de preparo:</strong> 15 minutos</p>
+                    <p><strong>Rendimento:</strong> 12 porções</p>
+
+                    <p><strong>Ingredientes:</strong></p>
+                    <ul>
+                        <li>3 bananas maduras</li>
+                        <li>2 ovos</li>
+                        <li>200g de farinha de aveia</li>
+                        <li>1 colher (sopa) de fermento</li>
+                        <li>1 colher (chá) de canela</li>
+                        <li>50g de nozes picadas</li>
+                    </ul>
+
+                    <p><strong>Modo de preparo:</strong></p>
+                    <ol>
+                        <li>Pré-aqueça o forno a 180°C.</li>
+                        <li>Amasse as bananas e misture os ovos e canela.</li>
+                        <li>Adicione a farinha e o fermento.</li>
+                        <li>Incorpore as nozes e coloque em formas.</li>
+                        <li>Asse por 20–25 minutos.</li>
+                    </ol>
+                </td>
+                <td>
+                    <img src="muffin.webp" alt="Muffin saudável" class="receita-img">
+                </td>
+            </tr>
+        </table>
+</div>
+
+        <div class="receita-box">
+<table class="receita-tabela">
+            <tr>
+                <td>
+                    <h3>Omelete Nutritivo com Legumes</h3>
+                    <p><strong>Tempo de preparo:</strong> 10 minutos</p>
+                    <p><strong>Rendimento:</strong> 1 porção</p>
+
+                    <p><strong>Ingredientes:</strong></p>
+                    <ul>
+                        <li>2 ovos</li>
+                        <li>cenoura ralada</li>
+                        <li>espinafre picado</li>
+                        <li>1 pitada de sal</li>
+                        <li>1 colher (chá) de azeite</li>
+                    </ul>
+
+                    <p><strong>Modo de preparo:</strong></p>
+                    <ol>
+                        <li>Bata os ovos com o sal.</li>
+                        <li>Adicione a cenoura e o espinafre.</li>
+                        <li>Aqueça o azeite e despeje a mistura.</li>
+                        <li>Cozinhe tampado até firmar.</li>
+                    </ol>
+                </td>
+                <td>
+                    <img src="omelete.png" alt="Omelete saudável" class="receita-img">
+                </td>
+            </tr>
+        </table>
+</div>
+
+        <div class="receita-box">
+<table class="receita-tabela">
+            <tr>
+                <td>
+                    <h3>Torta Saudável de Amendoim</h3>
+                    <p><strong>Tempo de preparo:</strong> 20 minutos</p>
+                    <p><strong>Rendimento:</strong> 6 porções</p>
+
+                    <p><strong>Ingredientes:</strong></p>
+                    <ul>
+                        <li>3 ovos</li>
+                        <li>150 g de farinha de avelã</li>
+                        <li>150 g de margarina</li>
+                        <li>2 colheres de cacau em pó</li>
+                        <li>150 g de chocolate amargo</li>
+                        <li>1 colher de chá de baunilha</li>
+                        <li>1 colher de sopa de fermento</li>
+                        <li>1 xícara de nozes</li>
+                        <li>Adoçante a gosto</li>
+                    </ul>
+
+                    <p><strong>Modo de preparo:</strong></p>
+                    <ol>
+                        <li>Derreta o chocolate e a manteiga.</li>
+                        <li>Bata ovos com adoçante.</li>
+                        <li>Misture tudo e adicione a farinha e cacau.</li>
+                        <li>Leve ao forno a 180°C por 15 minutos.</li>
+                    </ol>
+                </td>
+                <td>
+                    <img src="torta.webp" alt="Torta de amendoim" class="receita-img">
+                </td>
+            </tr>
+        </table>
+</div>
+    </main>
+    <footer>
+        <p>Projeto Científico - CEMEP 2025 | Orientação: Prof. Rafael Bonato e Prof. Pedro Ribeiro de Oliveira</p>
+        <p>Desenvolvido por Letícia Vedovello e Rafaela Munsignatti</p>
+    </footer>
+</body>
+</html>
